@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link href="src/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/d806aa51a9.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col">
+              <h5 class="city" id="newCity">
+                Vienna
+              </h5>
+              <h6 id="newCity2">
+                Current weather
+              </h6>
+            </div>
+            <div class="col">
+              <form class="search-form" id="search-form">
+                <input
+                  type="text"
+                  name="city"
+                  placeholder="  Enter your city"
+                  autofocus="on"
+                autocomplete="off"
+                id="enterCity"
+                class="form-control shadow-sm"/>
+                
+                  <input type="submit" value="submit" id="submitting" />
+                <input type="submit" value="current" id="currentCity" />
+                 </form>
+              
+            </div>
+            <div class="row>">
+              <div class="col">
+                <div class="temperature">
+                  <strong><span class="mainT" id="temp"></span><span class="units"><a href="#" id="celcius-link">ºC</a><a href="#" id="fahrenheit-link">|ºF</a></span></strong>
+                </div>
+                <div class="description1"> <p id="weatherDescription">Sunny</p></div>
+                
+                <div class="description2"> <p id="todaysDay">Monday 12:51</p></div>
+                <div class="description3"> <p>Weather Tomorrow</p></div>
+                <div class="description4"> <p>Cloudy</p></div>
+           <div class="sun">
+            <i class="fa-solid fa-sun"></i>
+        </div>
+          <div class="clouds">
+            <i class="fa-solid fa-cloud"></i>
+          </div>
+              </div>
+             
+                <div class="col2">
+                    <p><em>Wind</em><br /><span id="wind"></span>km/hr</p>
+                  </div>
+                  <div class="col2">
+                      <p><em>Humidity</em><br /><span id="humidity"></span>%</p>
+                    </div>
+                    <div class="col2">
+                        <p><em>Visibility</em><br />60 km</p>
+                      </div>
+                  <div class="col-2">
+                      <p><em>Feels like</em><br />
+                        22ºC</p>
+                    </div>
+                   
+                  <div class="col-2">
+                      <p><em>Pressure</em><br />
+                        1010 mb</p>
+                    </div>
+                    
+                      <div class="col-2">
+                          <p><em>UV index</em><br />
+                             4</p>
+                        </div>
+                       
+                        
+                        <div class="col4">
+                          Tue
+                        </div> 
+                        <div class="col5">
+                            Wed
+                          </div> 
+                          <div class="col6">
+                              Th
+                            </div> 
+                            <div class="col7">
+                                Fr
+                              </div> 
+                              <div class="col8">
+                              <i class="fa-solid fa-cloud"></i>
+                            </div>
+                              <div class="col9">
+                            <i class="fa-solid fa-sun"></i>
+                          </div>
+                            <div class="col10">
+                              <i class="fa-solid fa-sun"></i>
+                            </div>
+                              <div class="col11">
+                                <i class="fa-solid fa-sun"></i>
+                              </div>
+                        </div>
+                     
+            
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
